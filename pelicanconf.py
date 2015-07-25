@@ -3,14 +3,15 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Casey J Law'
-SITENAME = u'caseyjlawblog'
+SITENAME = u'Casey J Law'
 SITEURL = ''
+SITESUBTITLE = 'stuff...'
+TIMEZONE = 'America/Los_Angeles'
+DEFAULT_LANG = u'en'
+DEFAULT_DATE = 'fs'
 
 PATH = 'content'
-
-TIMEZONE = 'America/Los_Angeles'
-
-DEFAULT_LANG = u'en'
+SLUGIFY_SOURCE = 'title'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -19,24 +20,23 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+#SOCIAL = (('twitter', 'http://twitter.com/caseyjlaw'),
+#          ('github', 'http://gibub.com/caseyjlaw'),)
+GITHUB_URL = 'http://github.com/caseyjlaw'
+TWITTER_URL = 'http://twitter.com/caseyjlaw'
+#GOOGLE_ANALYTICS_ID = '3920334'
 
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
-
-DEFAULT_PAGINATION = False
-
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
-
-THEME = 'themes/gum'
+THEME = 'pelican-themes/gum'
 MARKUP = ('md', 'ipynb')
 
-PLUGIN_PATHS = ['pelican-plugins', 'custom-plugins']
+PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['ipynb']
+STATIC_PATHS = ['extra/favicon.ico', 'notebooks']
+EXTRA_PATH_METADATA = {
+    'extra/favicon.ico': {'path': 'favicon.ico'}
+    }
 
+DEFAULT_PAGINATION = False
+CACHE_CONTENT = False
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_TAGS_ON_MENU = True
