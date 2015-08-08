@@ -30,11 +30,11 @@ SOCIAL_PROFILE_LABEL = ''
 GOOGLE_ANALYTICS_ID = 'UA-3920334-4'
 #PROFILE_IMAGE_URL = 'https://drive.google.com/file/d/1JA_IufQKREG4Sw1qsrpTPDyi6wFJw-gR2g/view?usp=sharing'
 #COVER_IMAGE_URL = 'https://drive.google.com/file/d/1JA_IufQKREG4Sw1qsrpTPDyi6wFJw-gR2g/view?usp=sharing'
-THEME = 'pelican-themes/elegant'
+THEME = 'elegant'
 MARKUP = ('md', 'ipynb')
 
 LANDING_PAGE_ABOUT = {
-    'title': 'Casey J Law',
+#    'title': 'Casey J Law',
     'details': 'An Astronomer in the UC Berkeley Radio Astronomy Lab. I am interested in fast radio transients, data-intensive science, Python, and Civic Hacking.'
     }
 PROJECTS = [
