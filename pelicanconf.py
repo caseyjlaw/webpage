@@ -42,8 +42,8 @@ PROJECTS = [
      'url': 'http://labs.adsabs.harvard.edu/adsabs/abs/2015ApJ...807...16L',
      'description': 'Using radio interferometers as high-speed cameras to capture millisecond impulses from rare transients like fast radio bursts, pulsars, and stars.'
      },
-    {'name': 'Real-time data analysis',
-     'url': 'https://www.authorea.com/users/4091/articles/4912/_show_article',
+    {'name': 'VLA "realfast" project',
+     'url': 'https://caseyjlaw.github.io/realfast',
      'description': 'Developing the Very Large Array as a real-time, commensal transient search platform.'
      },
     {'name': 'VLA Sky Survey',
