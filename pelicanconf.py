@@ -25,9 +25,7 @@ SOCIAL = (
     )
 TWITTER_USERNAME = 'caseyjlaw'
 SOCIAL_PROFILE_LABEL = ''
-#GITHUB_URL = 'http://github.com/caseyjlaw'
-#TWITTER_URL = 'http://twitter.com/caseyjlaw'
-GOOGLE_ANALYTICS_ID = 'UA-3920334-4'
+GOOGLE_ANALYTICS = u'UA-3920334-4'
 #PROFILE_IMAGE_URL = 'https://drive.google.com/file/d/1JA_IufQKREG4Sw1qsrpTPDyi6wFJw-gR2g/view?usp=sharing'
 #COVER_IMAGE_URL = 'https://drive.google.com/file/d/1JA_IufQKREG4Sw1qsrpTPDyi6wFJw-gR2g/view?usp=sharing'
 THEME = 'elegant'
