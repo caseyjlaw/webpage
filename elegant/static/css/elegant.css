@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Baskerville, Garamond, Georgia, 'DejaVu Serif', 'Times New Roman', Times, Serif;
+    font-family: Palatino, Baskerville, Garamond, Georgia, 'DejaVu Serif', 'Times New Roman', Times, Serif;
     font-weight: normal;
 }
 h1 small, h1 a, h1 a:hover,
@@ -30,15 +30,36 @@ h6 small, h6 a, h6 a:hover {
     text-decoration: none;
 }
 a {
-    color: #3875d7;
+    color: #111111;
+/*    color: #3875d7; */
 }
+
+a:link { text-decoration: none;
+         background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#333, #333);
+         background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(#333, #333);
+         -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+         -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+         background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+         background-repeat: no-repeat, no-repeat, repeat-x;
+         text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
+         background-position: 0% 93%, 100% 93%, 0% 93%; }
+
+a:link::selection { text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
+                    background: #b4d5fe; }
+
+a:link::-moz-selection { text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
+                         background: #b4d5fe; }
+
 hr {
     border-width: 3px;
 }
 
 /* site title */
 .site-name {
-    font-family: 'Monaco', 'Inconsolata', 'Andale Mono', 'Lucida Console', 'Bitstream Vera Sans Mono', 'Courier New', Courier, Monospace;
+    font-family: Courier, 'Monaco', 'Inconsolata', 'Andale Mono', 'Lucida Console', 'Bitstream Vera Sans Mono', 'Courier New', Monospace;
+    font-weight: bold;
+    text-shadow: none;
+    background: none;
 }
 /* Top navigation menu */
 .top-menu li a {
@@ -136,7 +157,7 @@ div.highlight {
 }
 /* Tags */
 .list-of-tags {
-    font-family: 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+    font-family: 'Palatino', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
     list-style: none;
     margin: 0;
     overflow: hidden;
@@ -163,10 +184,10 @@ div.highlight {
     line-height: 28px;
 }
 .tag-title {
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
+    font-family: 'Palatino', 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
 }
 .articles-in-tag li {
-    font: 1.1em/1.6em 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
+    font: 1.1em/1.6em 'Palatino', 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
 }
 /* Article */
 article p:not(#list-of-translations):not(#post-share-links) a,
@@ -184,7 +205,7 @@ article div.article-content ul:not(.articles-timeline) a:hover {
     text-shadow: none;
 }
 .article-content, div.recent-posts p {
-    font: 1.2em/1.6em 'PT Serif', Georgia, 'Times New Roman', Times, Serif;
+    font: 1.2em/1.6em Palatino, 'PT Serif', Georgia, 'Times New Roman', Times, Serif;
     text-align: justify;
 }
 .article-content {
@@ -386,7 +407,7 @@ ul.list-articles-category {
 ul.list-articles-category li time {
     color: #8F8F8F;
     display: inline-block;
-    font: .9em 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
+    font: .9em Palatino, 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
     width: 7em;
 }
 a.category-link {
@@ -396,7 +417,7 @@ a.category-link:hover {
     text-decoration: none;
 }
 a.list-of-categories {
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
+    font-family: Palatino, 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
     font-size: 1.1em;
 }
 a.list-of-categories:hover {
@@ -411,7 +432,7 @@ ul.list-all-articles {
 }
 ul.list-all-articles li {
     border-bottom: 1px dotted #000;
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
+    font-family: Palatino, 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
     font-size: 1.1em;
     padding: .3em 0;
     overflow: auto;
@@ -419,7 +440,7 @@ ul.list-all-articles li {
 ul.list-all-articles li time {
     color: #AAA;
     float: right;
-    font-family: 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
+    font-family: Palatino, 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
     font-size: .9em;
 }
 div.blog-archives h2 {
@@ -428,9 +449,11 @@ div.blog-archives h2 {
     margin:0;
 }
 div.blog-archives article, div.recent-posts article {
+    font; inherit
     border-bottom: 1px dotted #AAA;
 }
 div.blog-archives article, div.recent-posts article {
+    font; inherit
     font-size: 1.1em;
     padding: .3em .2em;
     position: relative;
@@ -448,7 +471,7 @@ div.blog-archives time, div.recent-posts time {
 }
 div.blog-archives time, div.recent-posts time, div.recent-posts section {
     color: #8F8F8F;
-    font: .9em 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
+    font: .9em Palatino, 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
 }
 div.recent-posts section a {
     color: inherit;
@@ -559,7 +582,7 @@ a#allposts:hover {
 }
 .proj-desc {
     color: #999;
-    font: .9em 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
+    font: .9em Palatino, 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
 }
 /* reST specific rules*/
 .literal {
@@ -569,14 +592,14 @@ a#allposts:hover {
     border-radius: 3px;
     border: 1px solid #e1e1e8;
     color: #d14;
-    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-family: Consolas, Courier, Palatino
     font-size: 12px;
     padding: 2px 4px;
     white-space: nowrap;
 }
 /* Helper CSS classes */
 .amp {
-    font-family: 'Warnock Pro', 'Goudy Old Style', 'Palatino', 'Book Antiqua', Serif;
+    font-family: Palatino, 'Warnock Pro', 'Goudy Old Style', 'Book Antiqua', Serif;
     font-style: italic;
 }
 /* Use following classes to add floating images to your post */
