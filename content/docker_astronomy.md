@@ -4,7 +4,11 @@ Tags: software
 Slug: docker-in-astronomy
 Email: caseyjlaw@gmail.com
 
-## The Problem: We're Not Programmers
+###tl;dr
+
+Installing software is a pain, especially for astronomers dealing with legacy or poorly-supported code. Docker instantly gives astronomers access to a large and growing set of packages (e.g., the 'astrostack') on any OS, environment, or even in the cloud.
+
+### The Problem: We're Not Programmers
 
 Astronomy, as in many academic fields, is plagued by poorly maintained software. I've made [my own contributions](http://github.com/caseyjlaw/rtpipe) to that category and I totally understand why it happens. We have science to do and papers to write. Maintaining software (let alone making it [documented](http://collectiveidea.com/blog/archives/2014/04/21/on-documentation-driven-development) and [tested](https://en.wikipedia.org/wiki/Test-driven_development)) takes time.
 
@@ -14,7 +18,7 @@ I came across this problem when I got excited about reproducing the analysis of 
 
 It turns out that a basic exploration of pulsar data analysis requires half a dozen packages, written in a variety of languages and requiring a range of dependencies. Even experts in the field have stories about installing from scratch and losing days of work chasing compilation errors. It is so bad in pulsar astronomy that someone has written a [pulsar software installer](http://www.pulsarastronomy.net/wiki/Software/PSRSoft) that manages dependencies, build order, etc.. Ironically, the download link was broken when I first visited it last month (I contacted them and it has since been fixed).
 
-## The Solution: Build Once, Share in Docker
+### The Solution: Build Once, Share in Docker
 
 Thankfully, some smart people have built an open, free tool that I think could make a big impact on the way astronomers work. That tool is [Docker](http://docker.com).
 
@@ -26,7 +30,7 @@ So, while I may have struggled to install the standard set of pulsar analysis so
 
 Of course, Docker does require that the software in question be built once. But, then again, maybe someone else has already done that for you? [Peter Williams](https://twitter.com/pkgw) has already built the ["astro stack"](https://hub.docker.com/r/pkgw/jupyter-py2-astrostack). That Docker image includes a great sample of the most common astronomy software along with Jupyter (nee IPython) ready to go as an interactive computing environment.
 
-## Introducing: dodo
+### Introducing: dodo
 
 In my own applications of Docker to astronomy, I've found it useful to abstract out the docker layer as much as possible. Astronomers don't want to learn Docker; they want to learn how to use some new astronomy software. In an effort to ease access, I've written "dodo" (as in "Docker do"; see [the repo](https://github.com/caseyjlaw/sidomo)). Think of dodo as being like "sudo" for docker images. You can run any command-line tool available in a Docker image from your current environment by prefixing the command with "dodo".
 
@@ -64,7 +68,7 @@ This example shows how to use '--' to force the end of command-line options pars
 
 dodo is just a wrapper of the Python API for Docker, but it uses a syntax that makes Docker feel like a part of your operating system, just like sudo. You can set environment variables to define a standard image to use or X11 display (some setup required for that). Your local directory is mounted in the Docker container by default, so data is seamlessly passed to/from the container.
 
-## Use Cases
+### Use Cases
 
 When barriers to using new and/or creaky software are removed, then new use cases emerge. I'm excited about applying docker and dodo to common problems like:
 

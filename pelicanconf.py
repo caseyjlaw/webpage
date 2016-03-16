@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Casey J Law'
 SITENAME = u'Casey J Law'
+SITEURL = 'http://caseyjlaw.github.io'
 SITESUBTITLE = ''
 TIMEZONE = 'America/Los_Angeles'
 DEFAULT_LANG = u'en'
@@ -51,7 +52,7 @@ PROJECTS = [
     ]
 
 MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc']
-DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))
+DIRECT_TEMPLATES = (('tags', 'categories','archives', 'search', '404'))
 TAG_SAVE_AS = ''
 CATEGORY_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''
@@ -77,7 +78,7 @@ SITEMAP = {
     }
 }
 
-HOME_EXCLUDE = False
+HOME_EXCLUDE = True
 DEFAULT_PAGINATION = False
 CACHE_CONTENT = False
 LOAD_CONTENT_CACHE = False
