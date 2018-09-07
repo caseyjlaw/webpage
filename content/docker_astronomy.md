@@ -1,6 +1,7 @@
 Title: Docker in Astronomy
 Category: blog
 Tags: software
+date: 2016-03-15 16:00
 Slug: docker-in-astronomy
 Email: caseyjlaw@gmail.com
 

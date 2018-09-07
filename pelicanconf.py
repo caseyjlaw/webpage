@@ -51,14 +51,22 @@ PROJECTS = [
      }
     ]
 
-MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc']
+#MARKDOWN = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc']
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
+}
 DIRECT_TEMPLATES = (('tags', 'categories','archives', 'search', '404'))
 TAG_SAVE_AS = ''
 CATEGORY_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''
 
-PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = ['ipynb', 'render_math', 'sitemap', 'tipue_search', 'extract_toc']
+PLUGIN_PATHS = ['./plugins']
+PLUGINS = ['ipynb.markup', 'sitemap', 'tipue_search', 'extract_toc']
 STATIC_PATHS = ['extra/favicon.ico', 'images']
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'}
