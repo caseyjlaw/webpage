@@ -60,13 +60,13 @@ MARKDOWN = {
     },
     'output_format': 'html5',
 }
-DIRECT_TEMPLATES = (('tags', 'categories','archives', 'search', '404'))
+DIRECT_TEMPLATES = (('tags', 'categories','archives', 'index', '404'))  # 'search' page has spinning wheel
 TAG_SAVE_AS = ''
 CATEGORY_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''
 
-PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['ipynb.markup', 'sitemap', 'tipue_search', 'extract_toc']
+PLUGIN_PATHS = ['../pelican-plugins']
+PLUGINS = ['ipynb.markup', 'sitemap', 'extract_toc']  # 'tipue_search' not working?
 STATIC_PATHS = ['extra/favicon.ico', 'images']
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'}
