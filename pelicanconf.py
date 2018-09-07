@@ -33,21 +33,20 @@ THEME = 'elegant'
 MARKUP = ('md', 'ipynb')
 
 LANDING_PAGE_ABOUT = {
-#    'title': 'Casey J Law',
-    'details': 'An Astronomer in the UC Berkeley Radio Astronomy Lab. I am interested in fast radio transients, data-intensive science, Python, and Civic Hacking.' # <img width=200 align="right" src="images/casey_vla.jpg">
+    'details': 'I am an astronomer at the UC Berkeley Department of Astronomy and Radio Astronomy Lab. I am interested in radio transients, data-intensive astrophysics, Python, and open science.' # <img width=200 align="right" src="images/casey_vla.jpg">
     }
 PROJECTS = [
-    {'name': 'Fast Imaging with Radio Interferometers',
-     'url': 'http://labs.adsabs.harvard.edu/adsabs/abs/2015ApJ...807...16L',
-     'description': 'Using radio interferometers as high-speed cameras to capture millisecond impulses from rare transients like fast radio bursts, pulsars, and stars.'
+    {'name': 'Fast Radio Bursts',
+     'url': 'https://ui.adsabs.harvard.edu/?bbbRedirect=1#abs/2017ApJ...850...76L/abstract',
+     'description': 'I am interested in understanding this mysterious new class of extragalactic, millisecond radio transient.'
      },
     {'name': 'VLA "realfast" project',
-     'url': 'https://caseyjlaw.github.io/realfast',
-     'description': 'Developing the Very Large Array as a real-time, commensal transient search platform.'
+     'url': 'http://realfast.io',
+     'description': 'I am PI of a project to build a real-time, commensal transient search platform at the Very Large Array.'
      },
-    {'name': 'VLA Sky Survey',
-     'url': 'https://science.nrao.edu/science/surveys/vlass',
-     'description': 'I am co-chair of the technical working group for an ambitious new sky survey with the world\'s most sensitive radio interferometer.'
+    {'name': 'Transients in Radio Sky Surveys and Archives',
+     'url': 'https://ui.adsabs.harvard.edu/?bbbRedirect=1#abs/2018arXiv180808964L/abstract',
+     'description': 'I have led an effort to use radio sky surveys and archives to discover a decades-long, luminous radio transient.'
      }
     ]
 
