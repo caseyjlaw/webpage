@@ -45,7 +45,7 @@ PROJECTS = [
      'description': 'I am PI of a project to build a real-time, commensal transient search platform at the Very Large Array.'
      },
     {'name': 'Transients in Radio Sky Surveys and Archives',
-     'url': 'https://ui.adsabs.harvard.edu/?bbbRedirect=1#abs/2018arXiv180808964L/abstract',
+     'url': 'http://news.berkeley.edu/2018/10/04/ghost-objects-in-the-sky/',
      'description': 'I have led an effort to use radio sky surveys and archives to discover a decades-long, luminous radio transient.'
      }
     ]
