@@ -33,7 +33,7 @@ THEME = 'elegant'
 MARKUP = ('md', 'ipynb')
 
 LANDING_PAGE_ABOUT = {
-    'details': 'I am an astronomer at the UC Berkeley Department of Astronomy and Radio Astronomy Lab. I am interested in radio transients, data-intensive astrophysics, Python, and open science.' # <img width=200 align="right" src="images/casey_vla.jpg">
+    'details': 'I am an astronomer at Caltech interested in radio transients, data-intensive astrophysics, Python, and open science.' # <img width=200 align="right" src="images/casey_vla.jpg">
     }
 PROJECTS = [
     {'name': 'Fast Radio Bursts',
