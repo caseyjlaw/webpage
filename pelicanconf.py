@@ -40,9 +40,13 @@ PROJECTS = [
      'url': 'https://ui.adsabs.harvard.edu/?bbbRedirect=1#abs/2017ApJ...850...76L/abstract',
      'description': 'I am interested in understanding this mysterious new class of extragalactic, millisecond radio transient.'
      },
+    {'name': 'OVRO Software and Algorithms',
+     'url': 'https://www.ovro.caltech.edu/',
+     'description': 'I am leading development of software and algorithms at OVRO, especially for OVRO-LWA and DSA.'
+     },
     {'name': 'VLA "realfast" project',
      'url': 'http://realfast.io',
-     'description': 'I am PI of a project to build a real-time, commensal transient search platform at the Very Large Array.'
+     'description': 'I am leading an effort for real-time, commensal transient surveys at the Very Large Array.'
      },
     {'name': 'Transients in Radio Sky Surveys and Archives',
      'url': 'http://news.berkeley.edu/2018/10/04/ghost-objects-in-the-sky/',
