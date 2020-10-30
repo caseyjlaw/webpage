@@ -68,8 +68,9 @@ TAG_SAVE_AS = ''
 CATEGORY_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''
 
+from pelican_jupyter import markup as nb_markup
 PLUGIN_PATHS = ['../pelican-plugins']
-PLUGINS = ['ipynb.markup', 'sitemap', 'extract_toc']  # 'tipue_search' not working?
+PLUGINS = [nb_markup, 'sitemap', 'extract_toc']  # 'tipue_search' not working?
 STATIC_PATHS = ['extra/favicon.ico', 'images']
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'}
