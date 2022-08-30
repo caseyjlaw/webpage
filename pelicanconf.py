@@ -33,22 +33,22 @@ THEME = 'elegant'
 MARKUP = ('md', 'ipynb')
 
 LANDING_PAGE_ABOUT = {
-    'details': 'I am an astronomer at Caltech interested in radio transients, data-intensive astrophysics, Python, and open science.' # <img width=200 align="right" src="images/casey_vla.jpg">
+    'details': 'I am an astronomer at Caltech interested in radio transients, data-intensive astrophysics, and open science.' # <img width=200 align="right" src="images/casey_vla.jpg">
     }
 PROJECTS = [
     {'name': 'Fast Radio Bursts',
-     'url': 'https://ui.adsabs.harvard.edu/?bbbRedirect=1#abs/2017ApJ...850...76L/abstract',
+     'url': 'https://ui.adsabs.harvard.edu/abs/2022ApJ...927...55L/abstract',
      'description': 'I am interested in understanding this mysterious new class of extragalactic, millisecond radio transient.'
      },
-    {'name': 'OVRO Software and Algorithms',
-     'url': 'https://www.ovro.caltech.edu/',
+    {'name': 'OVRO Software and Algorithms Lab',
+     'url': 'https://salab.caltech.edu',
      'description': 'I am leading development of software and algorithms at OVRO, especially for OVRO-LWA and DSA.'
      },
     {'name': 'VLA "realfast" project',
      'url': 'http://realfast.io',
      'description': 'I am leading an effort for real-time, commensal transient surveys at the Very Large Array.'
      },
-    {'name': 'Transients in Radio Sky Surveys and Archives',
+    {'name': 'Slow Transients in Sky Surveys and Archives',
      'url': 'http://news.berkeley.edu/2018/10/04/ghost-objects-in-the-sky/',
      'description': 'I have led an effort to use radio sky surveys and archives to discover a decades-long, luminous radio transient.'
      }
